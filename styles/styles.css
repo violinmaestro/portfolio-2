@@ -1,0 +1,174 @@
+* {box-sizing: border-box;}
+
+p {
+  font-family: Avenir, sans-serif;
+}
+body {
+  background-color: hsl(45, 97%, 86%);
+}
+.name {
+  border-color: grey;
+  border-width: 4px;
+  border-style: outset;
+  font-family: monospace;
+  text-align: center;
+  padding: 2rem;
+}
+h1 {
+  font-size: 6.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 4px 4px 4px #aaa;
+}
+h2 {
+  font-size: 1.5rem;
+  margin-right: .8rem;
+}
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #cc4400;
+  top: 0;
+}
+.homepage {
+  float: left;
+  border-right: 1px solid #bbb;
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+.homepage a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #6666ff;
+}
+img {
+  border: 1px solid black;
+}
+.logo {
+  margin-top: .1rem;
+  margin-right: 1.5rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  float: left;
+}
+.introduction {
+  text-align: justify;
+  margin-right: 2rem;
+  font-size: 1.05rem;
+}
+.introduction h3 {
+  font-family: Avenir, sans-serif;
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+footer {
+  background-color: #cc4400;
+  height: 13rem;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 1rem;
+  clear: both;
+}
+i {
+  font-size: 3rem;
+  margin: .5rem;
+}
+.web-project-intro {
+  margin: 3rem;
+}
+.web-project-intro h2 {
+  font-size: 1.5rem;
+  font-family: Avenir, sans-serif;
+  margin: 1rem;
+}
+.web-project-intro p {
+  text-align: justify;
+}
+.cartoon {
+  float: left;
+  margin-right: 1rem;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin: 1.5rem;
+}
+.projects img {
+  text-decoration:none;
+	border:#6666ff thin solid;
+	padding: 4px;
+  margin: .5rem;
+}
+.projects img:hover {
+  background: #6666ff;
+}
+.projects p {
+  margin: 1px;
+}
+.about p {
+  font-family: 'Sunshiney', serif;
+  font-size: 1.5rem;
+  text-align: justify;
+  margin: 1rem;
+}
+.about img {
+  float: left;
+  margin: 1rem;
+}
+.about h2 {
+  font-family: 'Sunshiney', serif;
+  font-size: 3rem;
+  text-align: center;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #6666ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #cc4400;
+}
+.container {
+  border-radius: 5px;
+  background-color: #ff9966;
+  padding: 20px;
+}
+.contact {
+  margin-top: 1rem;
+}
+.smartphone-girl {
+  border-style: none;
+  float: right;
+  margin: 1rem;
+}
+.resume h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+.resume h3 {
+  font-size: 1.5rem;
+}
+.work-history {
+  margin-left: 2rem;
+  margin-right: 10rem;
+}
