@@ -47,7 +47,14 @@ h2 {
 li a:hover {
   background-color: #6666ff;
 }
-img {
+.editing-quote img {
+  margin: 1rem;
+  border: 1px solid black;
+}
+.cartoon img {
+  border: 1px solid black;
+}
+.logo img {
   border: 1px solid black;
 }
 .logo {
@@ -57,13 +64,14 @@ img {
   margin-bottom: 1rem;
   float: left;
 }
-.introduction {
+.introduction p {
+  font-family: 'Sawarabi Mincho', sans-serif;
   text-align: justify;
   margin-right: 2rem;
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 .introduction h3 {
-  font-family: Avenir, sans-serif;
+  font-family: 'Kaushan Script', cursive;
   font-size: 2.5rem;
   margin: 1rem;
 }
@@ -75,7 +83,21 @@ footer {
   padding: 1rem;
   clear: both;
 }
+footer a:link {
+  text-decoration: none;
+  color: #0000ff;
+}
+footer a:visited {
+  color: #66ffff;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer a:active {
+  color: #cc6699;
+}
 i {
+  color: black;
   font-size: 3rem;
   margin: .5rem;
 }
@@ -83,8 +105,8 @@ i {
   margin: 3rem;
 }
 .web-project-intro h2 {
-  font-size: 1.5rem;
-  font-family: Avenir, sans-serif;
+  font-size: 2rem;
+  font-family: 'Kaushan Script', cursive;
   margin: 1rem;
 }
 .web-project-intro p {
@@ -101,8 +123,8 @@ i {
   margin: 1.5rem;
 }
 .projects img {
-  text-decoration:none;
-	border:#6666ff thin solid;
+  text-decoration: none;
+	border: thin solid #6666ff;
 	padding: 4px;
   margin: .5rem;
 }
@@ -113,19 +135,64 @@ i {
   margin: 1px;
 }
 .about p {
-  font-family: 'Sunshiney', serif;
-  font-size: 1.5rem;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  font-size: 1.1rem;
   text-align: justify;
   margin: 1rem;
 }
 .about img {
   float: left;
   margin: 1rem;
+  border: 1px solid black;
 }
 .about h2 {
-  font-family: 'Sunshiney', serif;
+  font-family: 'Kaushan Script', cursive;
   font-size: 3rem;
   text-align: center;
+}
+.teaching-pic {
+  padding: 3rem;
+  margin-left: 5rem;
+}
+.teaching-pic img {
+  margin: .5rem;
+  display: inline-flex;
+  border-radius: 15px;
+  border: thin solid black;
+	padding: 2px;
+  position: relative;
+  box-shadow: 3px 3px 3px;
+}
+[title~="elementary"]:hover {
+  height: 350px;
+  background-color: green;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 50ms;
+}
+[title~="middle"]:hover {
+  animation: rotation infinite 3s linear;
+}
+[title~="high"]:hover {
+  transform: rotateY(180deg);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  transition-delay: 50ms;
+}
+[title~="university"]:hover {
+  height: 300px;
+  transition: width 2s, height 2s, transform 2s;
+  transform: rotate(180deg);
+}
+.teaching-summary p {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  text-align: justify;
+  margin: 3rem;
+}
+.teaching-summary p::first-line {
+  font-size: 1.5rem;
 }
 input[type=text], select, textarea {
   width: 100%;
@@ -162,8 +229,22 @@ input[type=submit]:hover {
   margin: 1rem;
 }
 .resume h2 {
-  text-align: center;
+  font-family: 'Kaushan Script', cursive;
   font-size: 3rem;
+  text-align: center;
+}
+.resume a {
+  font-family: Helvetica, sans-serif;
+}
+.resume-jump {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.resume-jump a {
+  text-decoration: none;
+}
+.resume-jump a:hover {
+  text-decoration: underline;
 }
 .resume h3 {
   font-size: 1.5rem;
@@ -171,4 +252,16 @@ input[type=submit]:hover {
 .work-history {
   margin-left: 2rem;
   margin-right: 10rem;
+  width: 47rem;
 }
+.work-history p {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.3rem;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
