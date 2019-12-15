@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Jennifer Lee</title>
     <script src="https://kit.fontawesome.com/697b15a1b7.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Sunshiney" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
   </head>
   <body>
@@ -27,16 +28,71 @@
        </ul>
     </nav>
     <section>
-    <h3>Contact Form</h3>
-      <div class="container">
-        <form action="/action_page.php">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          <input type="submit" value="Submit">
+    <h3 class="contact-form">So You Want to Contact Jennifer...</h3>
+        <form method="GET">
+            <label>Name:
+              <input type="text" name="name">
+            </label>
+            <label>Email:
+              <input type="email" name="email" placeholder="name@domain.com">
+            <label>Date:
+              <input type="date" name="date">
+            </label>
+            <label>What is your favorite color?
+              <input type="color" name="favcolor">
+            </label>
+            <label>Country (to select more than one, press the command or control
+            key while clicking with your mouse):
+                  <select name="country" multiple>
+                      <option value="canada">Canada</option>
+                      <option value="usa">USA</option>
+                      <option value="mexico">Mexico</option>
+                      <option value="unitedKingdom">United Kingdom</option>
+                      <option value="finland">Finland</option>
+                      <option value="germany">Germany</option>
+                      <option value="france">France</option>
+                      <option value="turkey">Turkey</option>
+                      <option value="iran">Iran</option>
+                      <option value="india">India</option>
+                      <option value="pakistan">Pakistan</option>
+                      <option value="sriLanka">Sri Lanka</option>
+                      <option value="japan">Japan</option>
+                      <option value="korea">Korea</option>
+                      <option value="china">China</option>
+                      <option value="hongKong">Hong Kong</option>
+                      <option value="taiwan">Taiwan</option>
+                      <option value="philippines">Philippines</option>
+                      <option value="singapore">Singapore</option>
+                      <option value="malaysia">Malaysia</option>
+                      <option value="thailand">Thailand</option>
+                      <option value="vietnam">Vietnam</option>
+                      <option value="australia">Australia</option>
+                      <option value="newZealand">New Zealand</option>
+                  </select>
+            </label>
+            <label>Other:
+              <input type="text" name="unlistedCountry">
+            <fieldset>
+              <legend>You would like to contact Jennifer regarding...?</legend>
+                  <label>Editing
+                    <input type="radio" name="service" value="Editing">
+                  </label>
+                  <label>Writing
+                    <input type="radio" name="service" value="Writing">
+                  </label>
+                  <label>Tutoring
+                    <input type="radio" name="service" value="Tutoring">
+                  </label>
+                  <label>Web projects
+                    <input type="radio" name="service" value="webProjects">
+                  <label>Other
+                    <input type="radio" name="service" value="Other">
+                  </label>
+           </fieldset>
+           <label>Message:
+                 <textarea rows="8" cols="10">What is it that you'd like to ask or tell Jennifer?</textarea>
+             <input type="submit" value="Submit">
+           </label>
         </form>
       </div>
     </section>
