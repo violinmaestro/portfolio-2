@@ -1,0 +1,229 @@
+* {box-sizing: border-box;}
+
+header {
+  padding: 2rem;
+  background-color: #ecb722;
+}
+p {
+  font-size: 1.5rem;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  margin-left: 1rem;
+}
+.homepage {
+  display: grid;
+  grid-template-columns: 1fr 9fr 2fr;
+}
+.business {
+  margin-left: 1rem;
+  padding: .5rem;
+}
+.business fa-search {
+}
+.navbar {
+  overflow: hidden;
+  background-color: #1b447f;
+}
+.navbar a {
+  float: left;
+  font-size: 1rem;
+  color: #ecb722;
+  text-align: center;
+  padding: 1rem 1.3rem;
+  text-decoration: none;
+}
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+.subnav .subnavbutton {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: #ecb722;
+  padding: 1rem 1.3rem;
+  background-color: #1b447f;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .subnav:hover .subnavbutton {
+  background-color: #ecb722;
+  color: black;
+}
+.subnav-content {
+  display: none;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  background-color: #444444;
+  width: 50%;
+  margin-left: 1rem;
+  z-index: 1;
+}
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+.subnav-content a:hover {
+  background-color: #ecb722;
+  color: #1b447f;
+}
+.subnav:hover .subnav-content {
+  display: block;
+}
+h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2.4rem;
+  align-items: center;
+  color: white;
+}
+h2 {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 2.7rem;
+  text-shadow: 2px 2px grey;
+}
+.welcome {
+  display: flex;
+  flex-direction: row;
+}
+.introduction {
+  width: 50rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.media {
+  padding: 2rem;
+  margin-top: 8rem;
+}
+section p {
+  font-size: 1.5rem;
+}
+.sign-up {
+  border: .1rem dashed black;
+  padding: .4rem;
+  width: 13rem;
+  height: 15rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+footer {
+  margin-top: 2rem;
+  padding: 1.2rem;
+  background-image: url('footer-image.jpg');
+  background-size: cover;
+  background-color: #03a3df;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  color: white;
+}
+.policy {
+  text-align: center;
+  align-items: baseline;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.policy p {
+  font-size: 1rem;
+}
+.social-media {
+  text-align: center;
+  font-size: 3rem;
+}
+.contact {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.contact p {
+  font-size: 1rem;
+}
+.links {
+  text-align: center;
+  color: white;
+}
+.links a:link {
+  color: white;
+  text-decoration: none;
+}
+.links a:hover {
+  color: yellow;
+}
+.links a:visited {
+  color: yellow;
+}
+.groups-headline {
+  font-size: 1.6rem;
+}
+.group-classes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1rem;
+}
+.basic {
+  border: 1rem groove #1b447f;
+  padding: 1rem;
+}
+.basic li {
+  font-size: 1.5rem;
+}
+.intermediate {
+  border: 1rem groove #1b447f;
+  padding: 1rem;
+}
+.intermediate li {
+  font-size: 1.5rem;
+}
+.advanced {
+  border: 1rem groove #1b447f;
+  padding: 1rem;
+}
+.advanced li {
+  font-size: 1.5rem;
+}
+.instructor-bio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1rem;
+}
+.derek {
+  border: 1rem groove #1b447f;
+  padding: 1rem;
+}
+.amy {
+  border: 1rem groove #1b447f;
+  padding: 1rem;
+}
+.nathan {
+  border: 1rem groove #1b447f;
+  padding: 1rem;
+}
+.private-lessons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+.single-private {
+  border: 1rem groove #1b447f;
+  padding: 1rem;
+}
+.single-private h2 {
+  font-size: 2rem;
+}
+.three-private {
+  border: 1rem groove #1b447f;
+  padding: 1rem;
+}
+.three-private h2 {
+  font-size: 2rem;
+}
+.ten-private {
+  border: 1rem groove #1b447f;
+  padding: 1rem;
+}
+.ten-private h2 {
+  font-size: 2rem;
+}
