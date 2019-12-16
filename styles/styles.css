@@ -114,16 +114,13 @@ footer {
 }
 footer a:link {
   text-decoration: none;
-  color: #0000ff;
+  color: #fcfcd7;
 }
 footer a:visited {
   color: #66ffff;
 }
 footer a:hover {
   text-decoration: underline;
-}
-footer a:active {
-  color: #cc6699;
 }
 footer p {
   font-size: 1.2rem;
