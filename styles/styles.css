@@ -228,8 +228,10 @@ i {
   text-align: justify;
   margin: 3rem;
 }
-.teaching-summary p::first-line {
-  text-transform: uppercase;
+.teaching-summary h3 {
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 2.5rem;
 }
 label {
   font-family: 'Sawarabi Mincho', sans-serif;
@@ -354,3 +356,4 @@ fieldset {
   to {
     transform: rotate(359deg);
   }
+}
